@@ -7,12 +7,12 @@ export const Container = styled.View`
     flex: 1;
     padding: 0px 40px;
     padding-top: ${getStatusBarHeight() + RFValue(20)}px;
-    background-color: #131313;
+    background-color: ${({theme})=> theme.colors.background};
 `;
 
 export const Icon = styled(MaterialIcons)`
     font-size: ${RFValue(30)}px;
-    color: white;
+    color: ${({theme})=> theme.colors.white};
     margin-bottom: ${RFValue(20)}px;
 `;
 
@@ -22,20 +22,20 @@ export const ScrollTextRules = styled.ScrollView.attrs({
 
 export const Title = styled.Text`
     font-size: ${RFValue(32)}px;
-    font-family: sans-serif;
+    font-family: ${({theme})=> theme.fonts.bold};
     margin-left: ${RFValue(10)}px;
-    color: white;
-    font-weight: bold;
+    color: ${({theme})=> theme.colors.white};
 `;
 
 export const Paragraph = styled.Text`
     font-size: ${RFValue(16)}px;
-    font-family: sans-serif;
+    font-family: ${({theme})=> theme.fonts.regular};
     margin-left: ${RFValue(10)}px;
     margin-top: ${RFValue(15)}px;
-    color: #bbb;
+    color: ${({theme})=> theme.colors.textLight};
 `;
 
 export const NumberParagraph = styled.Text`
     font-weight: bold;
+    color: ${({theme})=> theme.colors.white};
 `;
