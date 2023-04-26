@@ -34,7 +34,7 @@ export default function App() {
 
   return(
     <View onLayout={onLayoutRootView} style={{flex: 1}}>
-      <StatusBar color="light"/>
+      <StatusBar barStyle="light-content"/>
       <ThemeProvider theme={theme}>
         <Routes/>
       </ThemeProvider>
