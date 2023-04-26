@@ -12,7 +12,7 @@ export default function Start(){
     }
 
     const handleNavToPlayTogether = () =>{
-        console.log("Teste de play together")
+        navigation.navigate("PlayTogether")
     }
 
     const handleNavToRules = () => {
