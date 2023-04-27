@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect }from "react";
+import {Vibration} from "react-native";
 import {useNavigation} from "@react-navigation/native";
 import { Container, Logo, SucessImg, Title } from "./styles";
 import ButtonComponent from "../../components/Buttons";
@@ -11,6 +12,9 @@ export default function Disarmed(){
     const handleNavToStart = () =>{
         navigation.navigate("Start")
     }
+    useEffect(()=>{
+        Vibration.vibrate(8000)
+    },[])
     return(
         <Container>
             <Logo source={logoImg} style={{resizeMode: 'contain'}}/>
