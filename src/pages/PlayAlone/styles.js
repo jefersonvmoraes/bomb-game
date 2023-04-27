@@ -9,7 +9,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-    font-size: ${RFValue(32)}px;
+    font-size: ${RFValue(28)}px;
     font-family: ${({theme})=> theme.fonts.bold};
     color: ${({theme})=> theme.colors.white};
     text-align: center;
@@ -37,7 +37,7 @@ export const TipTitle = styled.Text`
 `;
 
 export const TipText = styled.Text`
-    font-size: ${RFValue(14)}px;
+    font-size: ${RFValue(16)}px;
     font-family: ${({theme})=> theme.fonts.regular};
     color: ${({theme})=> theme.colors.textLight};
 `;
