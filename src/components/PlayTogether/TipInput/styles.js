@@ -12,6 +12,13 @@ export const TipTitle = styled.Text`
     text-decoration-line: underline;
 `;
 
+export const TipText = styled.Text`
+    font-size: ${RFValue(20)}px;
+    margin-top: ${RFValue(15)}px;
+    font-family: ${({theme})=> theme.fonts.regular};
+    color: ${({theme})=> theme.colors.textLight};
+`;
+
 export const InputContainer = styled.View`
     width: ${RFValue(260)}px;
     height: ${RFValue(30)}px;
